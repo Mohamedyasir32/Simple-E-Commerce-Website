@@ -1,0 +1,107 @@
+body{
+  background-color: #faf7f7;
+}
+.contact-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-container h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #6b46c1;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.send-btn {
+  background-color: #6b46c1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #5835aa;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+  background: #f9f6ff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-info h2 {
+  color: #6b46c1;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+}

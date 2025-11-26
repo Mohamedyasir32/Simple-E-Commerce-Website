@@ -1,0 +1,140 @@
+
+.payment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  background: #f8f6ff;
+  padding: 20px;
+}
+
+.payment-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  width: 420px;
+  text-align: center;
+}
+
+.payment-card h2 {
+  color: #4b2ad1;
+  margin-bottom: 10px;
+}
+
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.method-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px;
+  background: #f3f1ff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.method-card:hover {
+  background: #e8e3ff;
+}
+
+.method-card.selected {
+  border: 2px solid #4b2ad1;
+  background: #ece8ff;
+}
+
+.method-info h3 {
+  margin: 0;
+  color: #333;
+}
+
+.method-info p {
+  margin: 3px 0 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.upi-details {
+  margin-top: 15px;
+  background: #f9f9ff;
+  padding: 15px;
+  border-radius: 10px;
+  color: #333;
+  text-align: left;
+}
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.card-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.card-row {
+  display: flex;
+  gap: 10px;
+}
+
+.pay-btn {
+  background: #5c3ef5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-top: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.pay-btn:hover {
+  background: #4527d4;
+}
+
+/* Processing loader */
+.processing-box {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.spinner {
+  width: 45px;
+  height: 45px;
+  border: 5px solid #ddd;
+  border-top: 5px solid #4b2ad1;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 10px;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.processing-box p {
+  color: #4b2ad1;
+  font-weight: 600;
+}
+
+.empty {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  padding: 60px;
+}

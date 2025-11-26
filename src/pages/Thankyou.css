@@ -1,0 +1,128 @@
+.thankyou-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(135deg, #f9f3ff, #e6f0ff);
+  padding: 30px;
+}
+
+.thankyou-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  max-width: 650px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.thankyou-card h2 {
+  color: #6a1b9a;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.thankyou-card p {
+  font-size: 1rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+h3 {
+  margin-top: 25px;
+  color: #4a148c;
+  font-size: 1.3rem;
+}
+
+.order-summary-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  background: #faf6ff;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+
+.summary-item:hover {
+  background: #f3e9ff;
+}
+
+.summary-item-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.summary-item-info {
+  text-align: left;
+}
+
+.item-name {
+  font-weight: bold;
+  color: #4a148c;
+}
+
+.thankyou-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.thankyou-btn,
+.invoice-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.thankyou-btn {
+  background: #4a148c;
+  color: #fff;
+}
+
+.invoice-btn {
+  background: #00bfa6;
+  color: #fff;
+}
+
+.thankyou-btn:hover {
+  background: #6a1b9a;
+}
+
+.invoice-btn:hover {
+  background: #00997e;
+}
+
+.empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 50px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
