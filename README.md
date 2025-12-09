@@ -71,3 +71,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <video width="600" controls>
   <source src="sample.mp4" type="video/mp4">
 </video>
+## 🎥 Demo Video
+▶️ Click to watch: https://raw.githubusercontent.com/Mhamedyasir32/Simple-E-Commerce-Website/feature/sample.mp4

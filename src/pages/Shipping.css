@@ -179,11 +179,63 @@
 @media (max-width: 768px) {
   .shipping-content {
     grid-template-columns: 1fr;
+    gap: 25px;
   }
 
   .shipping-container {
+    margin: 60px 20px;
+    padding: 30px 20px;
+  }
+
+  .shipping-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .order-summary {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shipping-container {
     margin: 40px 15px;
     padding: 25px 15px;
+  }
+
+  .shipping-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .shipping-form input,
+  .shipping-form textarea {
+    padding: 9px 10px;
+    font-size: 0.95rem;
+  }
+
+  .place-order-btn {
+    padding: 11px;
+    font-size: 15px;
+  }
+
+  .order-item {
+    gap: 10px;
+  }
+
+  .order-item-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .order-item-name {
+    font-size: 14px;
+  }
+
+  .order-item-price {
+    font-size: 13px;
+  }
+
+  .order-total {
+    font-size: 1rem;
   }
 }
 

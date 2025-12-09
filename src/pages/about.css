@@ -44,3 +44,37 @@ body{
 .about-section li {
   margin: 8px 0;
 }
+
+@media (max-width: 768px) {
+  .about-container {
+    margin: 40px 20px;
+    padding: 25px 20px;
+  }
+
+  .about-container h1 {
+    font-size: 2rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-section p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    margin: 30px 15px;
+    padding: 20px 15px;
+  }
+
+  .about-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.3rem;
+  }
+}

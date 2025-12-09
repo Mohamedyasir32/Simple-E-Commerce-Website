@@ -101,7 +101,52 @@ body{
 }
 
 @media (max-width: 768px) {
+  .contact-container {
+    margin: 40px 20px;
+    padding: 25px 20px;
+  }
+
+  .contact-container h1 {
+    font-size: 2rem;
+  }
+
   .contact-content {
     flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-form,
+  .contact-info {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    margin: 30px 15px;
+    padding: 20px 15px;
+  }
+
+  .contact-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .intro-text {
+    font-size: 0.95rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+    padding: 9px;
+  }
+
+  .send-btn {
+    padding: 11px;
+    font-size: 15px;
+  }
+
+  .contact-info {
+    padding: 15px;
   }
 }

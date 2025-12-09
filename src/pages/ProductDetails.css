@@ -7,6 +7,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .back-btn {
@@ -35,12 +39,30 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   padding: 40px;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   animation: fadeIn 0.6s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .details-card {
+    padding: 25px 15px;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-card {
+    padding: 20px 12px;
+    gap: 20px;
+  }
 }
  
 .details-img {
-  width: 380px;
-  height: 380px;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  max-height: 380px;
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -110,26 +132,70 @@
   }
 }
 
-
 @media (max-width: 900px) {
+  .details-container {
+    padding: 40px 5%;
+  }
+
   .details-card {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 25px 20px;
+    gap: 30px;
   }
 
   .details-img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
+    max-width: 300px;
   }
 
   .details-info {
     align-items: center;
+    width: 100%;
+  }
+
+  .details-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .details-price {
+    font-size: 1.4rem;
   }
 
   .add-btn {
     width: 100%;
-    text-align: center;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-container {
+    padding: 30px 4%;
+  }
+
+  .details-card {
+    padding: 20px 15px;
+    gap: 20px;
+  }
+
+  .details-img {
+    max-width: 100%;
+  }
+
+  .details-info h2 {
+    font-size: 1.4rem;
+  }
+
+  .details-price {
+    font-size: 1.3rem;
+  }
+
+  .details-info p {
+    font-size: 0.95rem;
+  }
+
+  .add-btn {
+    padding: 11px 18px;
+    font-size: 0.95rem;
   }
 }

@@ -6,6 +6,11 @@
   scroll-behavior: smooth;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .page {
   width: 100%;
   overflow-x: hidden;
@@ -72,10 +77,10 @@
 .home-jumbatron img {
   width: 100%;
   max-width: 350px;
-  height: 350px;
+  height: auto;
+  max-height: 350px;
   border-radius: 15px;
-  object-fit: fill;
-  size-adjust: 10px;
+  object-fit: cover;
   margin-top: 10px;
   box-shadow: 0 8px 20px rgba(91, 58, 133, 0.25);
   transition: transform 0.5s ease;
@@ -93,7 +98,6 @@
   .home-button{
     justify-content: center;
   }
-  
 }
 
 #about {
@@ -236,6 +240,7 @@
 .products-card:hover img {
   transform: scale(1.1);
 }
+
 .card-footer {
   padding: 20px;
   background: #fff;
@@ -289,12 +294,15 @@
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
+
 .contact-page h2{
   margin-top: 10px;
 }
+
 .contact-page p{
   margin-top: 10px;
 }
+
 .contact-info {
   margin-top: 20px;
   text-align: left;
@@ -385,33 +393,6 @@ form .btn:hover {
     transform: translateY(0);
   }
 }
-@media (max-width: 1024px) {
-  #products {
-    padding: 80px 6%;
-  }
-  .products-page h1 {
-    font-size: 2.3rem;
-  }
-  .products-page h3 {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .explore-products {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 25px;
-  }
-  .products-card img {
-    height: 200px;
-  }
-  .card-footer h1 {
-    font-size: 1rem;
-  }
-  .contact-info {
-    text-align: center;
-  }
-}
 
 @media (max-width: 1024px) {
   #products {
@@ -426,7 +407,6 @@ form .btn:hover {
 }
 
 @media (max-width: 768px) {
-
   #home {
     padding: 70px 5%;
     text-align: center;
@@ -567,75 +547,57 @@ form .btn:hover {
     font-size: 1.1rem;
   }
 }
-/* 📱 Mobile View Fix for Home Visibility */
-@media (max-width: 768px) {
-  html, body {
-    width: 100%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-  }
 
+@media (max-width: 480px) {
   #home {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 20px 80px;
-    min-height: calc(100vh - 80px); /* Ensures full screen height minus navbar */
-    background: linear-gradient(135deg, #f6f4ff, #e7dbff);
-    text-align: center;
-  }
-
-  .home-container {
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 35px;
-    width: 100%;
-  }
-
-  .home-jumbatron img {
-    max-width: 280px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .home-content {
-    width: 100%;
+    padding: 80px 5% 60px;
   }
 
   .home-content h1 {
-    font-size: 2rem;
-    margin-bottom: 12px;
-    color: #2c1f4a;
+    font-size: 1.8rem;
   }
 
   .home-content p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 18px;
-    color: #3d2f5a;
+    font-size: 0.95rem;
   }
 
-  .home-button {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+  .home-jumbatron img {
+    max-width: 250px;
   }
 
-  .home-button button {
-    padding: 10px 25px;
-    border-radius: 25px;
-    background: #6c48c5;
-    color: #fff;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
+  #about {
+    padding: 60px 5%;
   }
 
-  .home-button button:hover {
-    background: #8e6cff;
+  .about-page {
+    padding: 30px 20px;
+  }
+
+  .about-page h1 {
+    font-size: 1.8rem;
+  }
+
+  #products {
+    padding: 60px 5%;
+  }
+
+  .products-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .explore-products {
+    grid-template-columns: 1fr;
+  }
+
+  #contact {
+    padding: 60px 5%;
+  }
+
+  .contact-page {
+    padding: 30px 20px;
+  }
+
+  .contact-page h1 {
+    font-size: 1.8rem;
   }
 }
