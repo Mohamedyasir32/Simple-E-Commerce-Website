@@ -138,3 +138,56 @@
   color: #777;
   padding: 60px;
 }
+
+@media (max-width: 768px) {
+  .payment-container {
+    padding: 15px;
+  }
+
+  .payment-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 25px 20px;
+  }
+
+  .payment-card h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-card {
+    padding: 20px 15px;
+  }
+
+  .payment-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .method-card {
+    padding: 10px;
+  }
+
+  .method-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .method-info p {
+    font-size: 0.85rem;
+  }
+
+  .card-form input {
+    padding: 9px;
+    font-size: 14px;
+  }
+
+  .pay-btn {
+    padding: 11px 18px;
+    font-size: 0.95rem;
+  }
+
+  .upi-details {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}

@@ -339,6 +339,10 @@
     padding: 10px 20px;
   }
 
+  .logo {
+    margin-right: 0;
+  }
+
   .menu-icon {
     display: block;
   }
@@ -393,6 +397,29 @@
 
   .logo span {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 15px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .logo img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .nav-links {
+    padding: 12px 20px;
+  }
+
+  .nav-links button {
+    font-size: 15px;
   }
 }
 

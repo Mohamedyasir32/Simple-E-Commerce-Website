@@ -25,3 +25,27 @@
   background: #7b2ff7;
   color: #fff;
 }
+
+@media (max-width: 768px) {
+  .pagination {
+    gap: 8px;
+    margin: 15px;
+  }
+
+  .pagination button {
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination {
+    gap: 6px;
+    margin: 12px;
+  }
+
+  .pagination button {
+    padding: 6px 9px;
+    font-size: 13px;
+  }
+}
