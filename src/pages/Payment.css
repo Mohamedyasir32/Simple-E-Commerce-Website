@@ -3,9 +3,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 85vh;
+  min-height: 100vh;
   background: #f8f6ff;
-  padding: 20px;
+  padding: 80px 20px 20px;
 }
 
 .payment-card {
@@ -13,7 +13,8 @@
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-  width: 420px;
+  width: 100%;
+  max-width: 420px;
   text-align: center;
 }
 
@@ -31,13 +32,14 @@
 
 .method-card {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
   padding: 12px;
   background: #f3f1ff;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
+  text-align: left;
 }
 
 .method-card:hover {
@@ -49,13 +51,18 @@
   background: #ece8ff;
 }
 
+.method-info {
+  flex: 1;
+}
+
 .method-info h3 {
-  margin: 0;
+  margin: 0 0 4px 0;
   color: #333;
+  font-size: 1rem;
 }
 
 .method-info p {
-  margin: 3px 0 0;
+  margin: 0;
   font-size: 0.9rem;
   color: #555;
 }
@@ -141,12 +148,10 @@
 
 @media (max-width: 768px) {
   .payment-container {
-    padding: 15px;
+    padding: 80px 15px 15px;
   }
 
   .payment-card {
-    width: 100%;
-    max-width: 420px;
     padding: 25px 20px;
   }
 
@@ -156,6 +161,10 @@
 }
 
 @media (max-width: 480px) {
+  .payment-container {
+    padding: 70px 10px 10px;
+  }
+
   .payment-card {
     padding: 20px 15px;
   }
@@ -166,6 +175,8 @@
 
   .method-card {
     padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .method-info h3 {
@@ -179,6 +190,10 @@
   .card-form input {
     padding: 9px;
     font-size: 14px;
+  }
+
+  .card-row {
+    flex-direction: column;
   }
 
   .pay-btn {
