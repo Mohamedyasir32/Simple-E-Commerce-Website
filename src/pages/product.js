@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ProductCard from "./productcard";
-import Pagination from "./Pagination"
+import Pagination from "./pagination"
 
 import pencil from "./products_img/2b_pencils.jpg";
 import pencilbox from "./products_img/Apsara_pencil_box.jpg";
@@ -23,7 +23,7 @@ function Product() {
   const [currentPage, setCurrentPage] = useState(1);
   const [filter, setFilter] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");
-  const itemsPerPage = 6;
+  const itemsPerPage = 8;
 
   const products = [
     { id: 1, image: pencil, name: "2B-pencil-box", price: 45, rating: 4, discount: 10, inStock: true },
